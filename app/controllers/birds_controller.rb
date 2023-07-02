@@ -11,7 +11,7 @@ class BirdsController < ApplicationController
     bird = Bird.create(bird_params)
     render json: bird, status: :created
   end
-
+  
   # GET /birds/:id
   def show
     bird = Bird.find_by(id: params[:id])
